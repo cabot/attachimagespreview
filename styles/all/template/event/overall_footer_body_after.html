@@ -1,0 +1,10 @@
+{% if S_SHOW_ATTACH_BOX and FILTERS %}
+{% INCLUDECSS '@cabot_attachimagespreview/attachimagespreview.css' %}
+{% INCLUDEJS '@cabot_attachimagespreview/attachimagespreview.js' %}
+<script>
+	$(window).on('load', function () {
+		attachImagePreview();
+		phpbb.plupload.uploader.bind('FileUploaded', attachImagePreview);
+	});
+</script>
+{% endif %}

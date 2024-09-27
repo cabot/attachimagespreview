@@ -1,0 +1,35 @@
+{
+    "name": "cabot/attachimagespreview",
+    "type": "phpbb-extension",
+    "description": "Images preview in the attachment upload form.",
+    "homepage": "https://github.com/cabot/attachimagespreview",
+    "version": "1.0.0",
+    "keywords": [
+        "phpbb",
+        "extension"
+    ],
+    "license": "GPL-2.0-only",
+    "authors": [
+        {
+            "name": "cabot",
+            "homepage": "https://forum.cabotweb.fr",
+            "role": "SushiMaker"
+        }
+    ],
+    "require": {
+        "phpbb/phpbb": ">=3.3",
+        "php": ">=7.2"
+    },
+    "extra": {
+        "display-name": "Attach Images Preview",
+        "soft-require": {
+            "phpbb/phpbb": ">=3.3"
+        },
+        "version-check": {
+            "host": "raw.githubusercontent.com",
+            "directory": "/cabot/attachimagespreview/master",
+            "filename": "versioncheck.json",
+            "ssl": true
+        }
+    }
+}

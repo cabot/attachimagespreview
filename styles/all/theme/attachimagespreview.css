@@ -1,0 +1,20 @@
+.attach-img-preview {
+	max-width: 100px;
+	max-height: 50px;
+	width: auto;
+	height: auto;
+	box-sizing: border-box;
+}
+
+.attach-img-lightbox-preview .attach-img-preview {
+	border: 2px solid transparent;
+	transition: border-color 0.1s ease-out;
+}
+
+.attach-img-lightbox-preview:hover .attach-img-preview {
+	border-color: var(--attach-img-lightbox-border-color, rgb(68, 170, 238));
+}
+
+.attach-name:has(.attach-img-preview) dfn {
+	vertical-align: top;
+}
